@@ -41,8 +41,9 @@ customization:
       dsmode: local
       instance-id: ubuntu-desktop
   extra-snaps:
-    - name: gnome-46-2404
-    - name: mesa-2404
+    # Workaround as ubuntu-image doesn't apply default channel.
+    - name: firefox
+      channel: stable/ubuntu-24.04
     - name: snapd
   extra-packages:
     # FIXME using extra-packages as a workaround for missing bits to make the
